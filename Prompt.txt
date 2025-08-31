@@ -1,0 +1,191 @@
+**In Cursor**
+
+Create a new React project using Vite. Name it "algoed-quiz-mvp". Include basic routing with React Router DOM.
+
+
+
+**In Cursor**
+
+Set up a basic project structure for a React application with separate folders for components, pages, services, and assets.
+
+
+
+**In Cursor**
+
+Install Firebase into the current React project.
+
+
+
+**In Cursor**
+
+Read @Requirement.txt , break down the taskes and write stories file to keep track of development process.
+
+
+
+**In Cursor**
+
+@QuizPlatformUI.png is the expected UI, when working on Story 1.1, do you below steps are good ideas:
+1. Create a new React component named 'QuizQuestion' in the 'src/components' folder. It should take 'question' and 'options' as props and display the question text and list the options as buttons.
+2. Implement basic state management within 'QuizPage' to hold the current question data. Initially, load the first question from the algoed-quiz-mvp/public/philosophy_questions.json.
+3. Add basic CSS to 'QuizQuestion.css' to make the question text clearly readable and the answer options clickable.
+4. Write a test script using React Testing Library for the 'QuizQuestion' component. Test that the component renders the question text and the correct number of answer option buttons based on the provided props.
+5. Write a test script for the 'QuizPage' component's initial state. Test that it correctly loads and displays the first question from 'quiz_questions.json' on mounting.
+
+
+
+
+
+**In Cursor**
+
+Please finish story 1.1 as your recommended order and implement the UI as @QuizPlatformUI.png 
+
+
+
+**In Cursor**
+
+The quiz UI is not as @QuizPlatformUI.png and the @philosophy_questions.json is not loaded, please check again
+
+
+
+**In Cursor**
+
+How to reload the UI
+
+
+
+**In Cursor**
+
+Check the actual completion status of Story 1.1 in algoed-quiz-mvp/USER_STORIES.md     
+
+
+
+**In Claude Code**
+You are right, please implement the missing components of Story   
+   1.1, especially implement the question display interface same as  
+   algoed-quiz-mvp/public/QuizPlatformUI.png                         
+
+
+**In Claude Code**
+Update the status of Story 1.1 in                                 
+   /algoed-quiz-mvp/USER_STORIES.md and continue to finish Story     
+   1.2    
+
+**In Claude Code**
+Always remeber to update status in                                
+   /QuizPlatform/algoed-quiz-mvp/USER_STORIES.md. Continue to Story  
+   1.3    
+
+**In Claude Code**
+ The first question is working good, but in the next questions,    
+   user cannot choose any options, and the Save & next button is     
+   always unclicked. It is a bug, please fix it.   
+
+**In Claude Code**
+I want to pause only 1.5 seconds after I clicked save button      
+
+**In Claude Code**
+When timer stops at 0, move to next question and save user        
+   chosen but unsubmiited answer, if user did not select, save as    
+   null         
+
+**In Claude Code**
+I tested, when timer reaches 0, the page stayed on the current    
+   question, please fix to moving to the next quiz   
+
+**In Claude Code**
+Now we can move to next question when timers reaches 0, but the   
+   actual is that is will jump to next 2 quiz, rather than the next  
+   one. please fix this.        
+
+**In Claude Code**
+When timer reaches 0, please also show the correct answer         
+
+**In Claude Code**
+Make sure when user chose one answer and do not click Save, when  
+   timer reaches 0, automatically submit answer for user    
+
+**In Claude Code**
+When user did not select anything, the right answer will show,    
+   but in the next quiz, when timer reaches 0, the auto-submit is    
+   not working         
+
+**In Claude Code**
+Ok, issue fixed. Complete Story 1.4    
+
+**In Claude Code**
+Finish Story 2.1        
+
+**In Claude Code**
+Do Story 2.2     
+
+**In Claude Code**
+Do story 3.1                                                  
+
+**In Claude Code**
+Click on Start Live Quiz and nothing happened 
+
+**In Claude Code**
+Start Live Quiz button still not responding. Maybe that is        
+   because I did not config any Firebase settings, please tell me    
+   how to do that     
+
+**In Claude Code**
+Now we can enter into Live Demo Mode, but the actual total        
+   number of questions is 15 rather than 5, fix this bug.  
+
+**In Claude Code**
+Do Story 3.2  
+
+**In Claude Code**
+Do Story 4.1    
+
+**In Claude Code**
+Please alse make sure that answer options are randomized per      
+   session for the same user      
+
+**In Claude Code**
+Finish Story 4.2      
+
+**In Claude Code**
+Do Story 5.1         
+
+**In Claude Code**
+When times up, make the Submit button gray is good enough   
+
+**In Claude Code**
+Do story 5.2           
+
+**In Claude Code**
+Do Story 6.1     
+
+**In Claude Code**
+In quiz page, please modify the logic to: When times up or user   
+   clicked Submit button, a “Next” button will display, and the      
+   next quesiton will not automatically show up until user click     
+   the “Next” button 
+
+**In Claude Code**
+Update timer logic: when user submit answer before time up, set   
+   timer to 0 immediately   
+
+**In Claude Code**
+In Home page, make sure that each Button will lead user to each   
+   section, for now the Learn, Quiz, Track Progress are not working 
+
+**In Cursor**
+Read the entire project to write README, include:
+1. Tech stack
+2. Installation instructions: How to install all the necessary tech stacks
+3. Flow explanations: Describe the user journey for participants and the host. Explain how your flows facilitate a smooth experience.
+4. Feature Rationale: Why did you choose your specific approach for quiz progression and error handling?
+5. Future Enhancements: What improvements or additional features could be incorporated to enhance the experience in a full-scale product?
+
+**In Cursor**
+Read the entire project to write README, include:
+1. Tech stack
+2. Installation instructions: How to install all the necessary tech stacks
+3. Flow explanations: Describe the user journey for participants and the host. Explain how your flows facilitate a smooth experience.
+4. Feature Rationale: Why did you choose your specific approach for quiz progression and error handling?
+5. Future Enhancements: What improvements or additional features could be incorporated to enhance the experience in a full-scale product?
+
+
